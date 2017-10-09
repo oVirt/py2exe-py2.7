@@ -6,6 +6,7 @@
 || mkdir -p tmp.repos/SOURCES
 
 spectool --all --get-files --directory tmp.repos/SOURCES py2exe-py2.7.spec
+7za x tmp.repos/SOURCES/*.exe
 
 rpmbuild \
     -D "_topdir $PWD/tmp.repos" \
