@@ -1,0 +1,11 @@
+---
+arch: x86_64
+distro: [el7, fc28, fc29, fcraw]
+release_branches:
+  master:
+    - ovirt-master
+    - ovirt-4.3
+    - ovirt-4.2
+stages:
+  - check-patch
+  - build-artifacts
